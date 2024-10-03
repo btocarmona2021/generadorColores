@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador de Paleta de Colores</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+<div class="container">
+    <h1>Generador de Paleta de Colores</h1>
+
+    <div class="color-picker-container">
+        <label for="colorPicker">Elige un color base:</label>
+        <input type="color" id="colorPicker" value="#773cff">
+        <button onclick="generatePalette()">Generar Paleta</button>
+    </div>
+
+    <div class="palette" id="colorPalette"></div>
+
+    <h2>Variables CSS generadas:</h2>
+    <div class="color-output" id="cssOutput">
+        <button class="copy-button" onclick="copyToClipboard()">Copiar</button>
+    </div>
+    <div class="copy-confirmation" id="copyConfirmation">¡Copiado al portapapeles!</div>
+</div>
+
+<script src="./js/script.js"></script>
+</body>
+</html>
